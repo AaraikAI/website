@@ -12,6 +12,11 @@ import {
   Sparkles,
   ShieldCheck,
   Repeat,
+  Mic,
+  LineChart,
+  ScanEye,
+  FileText,
+  Languages,
 } from "lucide-react";
 import { Service } from "./types";
 
@@ -24,6 +29,15 @@ export const ROTATION_MS = 3000;
 export const FLASH_MS = 2000;
 
 export const SOLUTION_CARDS: Service[] = [
+  // New Features (Prioritized)
+  { icon: Mic, title: "AI Voice Agents", copy: "Natural, conversational voice interfaces for customer support and booking systems that run 24/7.", tags: ["Voice", "Support"], accent: "rose", badge: "New" },
+  { icon: LineChart, title: "Predictive Analytics", copy: "Forecast market trends and inventory needs with high-precision time-series models trained on your data.", tags: ["Forecasting", "Data"], accent: "sky", badge: "New" },
+  { icon: ScanEye, title: "Visual Inspection AI", copy: "Automated quality control for manufacturing using advanced computer vision to detect defects instantly.", tags: ["Vision", "Manufacturing"], accent: "slate", badge: "New" },
+  { icon: Languages, title: "Multilingual Translation", copy: "Real-time, context-aware translation for global business communication and localization.", tags: ["Translation", "Global"], accent: "teal", badge: "New" },
+  { icon: FileText, title: "Legal Document AI", copy: "Rapidly review contracts and extract specific clauses to accelerate legal workflows and reduce risk.", tags: ["Legal", "NLP"], accent: "indigo", badge: "New" },
+  
+  // Existing Core Features
+  { icon: Layers, title: "Agentic Agents", copy: "Agentic Agents are an advanced evolution of knowledge retrieval systems, seamlessly unifying data from PDFs, emails, wikis, and databases to deliver grounded, context-aware answers.", tags: ["RAG", "Agents"], accent: "blue", badge: "RAG" },
   { icon: Megaphone, title: "AI Media & Marketing", copy: "On‑brand content, ads, and multichannel orchestration for B2B/B2C—grounded in your style and data.", tags: ["B2B", "B2C", "Ads"], accent: "violet", badge: "Marketing" },
   { icon: Tractor, title: "Agro AI & Autonomy", copy: "Applied AI for agriculture—autonomous field operations, crop health monitoring, yield forecasting, and precision input management from sensor & satellite data to decisions.", tags: ["Agriculture", "Autonomy"], accent: "green", badge: "Agriculture" },
   { icon: Leaf, title: "Environmental AI", copy: "Detection, reporting, and optimization with geospatial + sensor data.", tags: ["Geospatial", "Sensors"], accent: "emerald", badge: "Sustainability" },
@@ -31,7 +45,6 @@ export const SOLUTION_CARDS: Service[] = [
   { icon: Users, title: "Woman Empowerment AI", copy: "Govt. initiatives that augment access, upskilling, and entrepreneurship with ethically‑designed AI.", tags: ["Gov", "Upskilling"], accent: "rose", badge: "Inclusion" },
   { icon: Stethoscope, title: "Government & Medicine AI", copy: "Triage, retrieval, and compliant decision support—safety and privacy first.", tags: ["Compliance", "HITL"], accent: "red" },
   { icon: Workflow, title: "AI‑Enabled Workflows", copy: "Automate drafting, summarizing, routing, QA, and approvals.", tags: ["Automation", "Ops"], accent: "teal" },
-  { icon: Layers, title: "Agentic Agents", copy: "Agentic Agents are an advanced evolution of knowledge retrieval systems, seamlessly unifying data from PDFs, emails, wikis, and databases to deliver grounded, context-aware answers.", tags: ["RAG", "Agents"], accent: "blue", badge: "RAG" },
   { icon: Gauge, title: "AI Strategy & E2E Solutions", copy: "Roadmaps, pilots, and productionization tuned to your KPIs and risk posture.", tags: ["Strategy", "Pilot"], accent: "amber", badge: "Strategy" },
 ];
 

@@ -1,4 +1,4 @@
-import React, { Component, ReactNode } from 'react';
+import React, { Component, ReactNode, ErrorInfo } from 'react';
 
 interface ErrorBoundaryProps {
   children?: ReactNode;
@@ -16,7 +16,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
     return { hasError: true, message: err instanceof Error ? err.message : String(err) };
   }
 
-  componentDidCatch(err: unknown, info: unknown) {
+  componentDidCatch(err: unknown, info: ErrorInfo) {
     // eslint-disable-next-line no-console
     console.error("Landing error:", err, info);
   }
